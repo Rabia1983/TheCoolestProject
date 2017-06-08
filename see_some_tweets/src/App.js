@@ -13,27 +13,27 @@ class App extends Component {
      Whathappen:[]
    }
    this.showmetweet = this.showmetweet.bind(this);
-  this.firststep = this.firststep.bind(this);
+  // this.firststep = this.firststep.bind(this);
  }
 
-firststep(whatever){
-  axios.post('http://0.0.0.0:3000/gettweet?somthing='+whatever)
-  .then(response => {
-    const newdata = response.data.map((r, index) =>
-      ({
-        key: index,
-        Whathappen: 'Done',
-      })
-    );
-
-    this.setState({
-     Whathappen: newdata,
-    });
-  });
-}
+// firststep(whatever){
+//   axios.post('http://0.0.0.0:3000/gettweet?somthing='+whatever)
+//   .then(response => {
+//     const newdata = response.data.map((r, index) =>
+//       ({
+//         key: index,
+//         Whathappen: 'Done',
+//       })
+//     );
+//
+//     this.setState({
+//      Whathappen: newdata,
+//     });
+//   });
+// }
 
  showmetweet(sometext) {
- this.firststep(sometext)
+ // this.firststep(sometext)
    let i=0;
     if (sometext === 'NASA')
      {
